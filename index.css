@@ -987,8 +987,8 @@ footer > a:hover{
 }
 
 .about-me {
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
+  margin-left: 675px;
 }
 
 .about-me p{
