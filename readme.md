@@ -34,7 +34,7 @@
 
 
 <H2>APPLICATION WEBSITE</h2>
-<p>A working prototype of this app can be viewed at <a href="https://votes-on-wheels.glitch.me">https://votes-on-wheels.glitch.me</a></p>
+<p>A working prototype of this app can be viewed at <a href="https://jessmichaud488.github.io/https-jessmichaud488.github.io-Votes-on-Wheels-/">https://jessmichaud488.github.io/https-jessmichaud488.github.io-Votes-on-Wheels-/</a></p>
 
 
 <h2>RESPONSIVE DESIGN</h2>
