@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MY | DASHBOARD</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/af.js">
+    <link rel="stylesheet" type="text/css" href="voterdashboard.css">
+    <link rel="stylesheet" type="text/css" href="voterresponsive.css">
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  </head>
+  <body>
+    <nav class="fixed-nav">
+      <div class="nav-logo">
+        <a href="javascript:void(0)">VOTES on WHEELS</a>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li class="browse-sched-link"><a href="javascript:void(0)"><i class="fa fa-calendar"></i>BROWSE SCHEDULES</a></li>
+          <li class="dashboard-link"><a href="javascript:void(0)"><i class="fa fa-user"></i> MY DASHBOARD</a></li>
+          <li><a href="../index.html#contact"><i class="fa fa-id-card-o"></i>CONTACT</a></li>
+          <li><a href="../index.html"><i class="fa fa-sign-out"></i>LOG OUT</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-icon">
+        <a href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+      </div>
+      <div class="hamburger-menu animated">
+        <ul>
+          <li><a class="hamburger-close" href="javascript:void(0)">&times;CLOSE</a></li>
+          <li class="dashboard-link"><a href="javascript:void(0)"><i class="fa fa-user"></i>MY DASHBOARD</a></li>
+          <li class="browse-sched-link"><a href="javascript:void(0)"><i class="fa fa-calendar"></i>BROWSE SCHEDULES</a></li>
+          <li><a href="../index.html#contact"><i class="fa fa-id-card-o"></i>CONTACT</a></li>
+          <li><a href="../index.html"><i class="fa fa-sign-out"></i>LOG OUT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="modal-dashboard">
+        <div class="profile-card animated bounceInUp">
+          <h3></h3>
+          <div class="profile-nav">
+            <a class="upcoming-pickups" href="javascript:void(0)">UPCOMING PICK UPS</a>
+            <a class="account-settings" href="javascript:void(0)">ACCOUNT SETTINGS</a>
+          </div>
+          <div class="js-pickups-list">
+            <table>
+              <thead>
+                <th><i class="fa fa-calendar"></i>DATE</th>
+                <br>
+                <th><i class="fa fa-clock-o"></i>TIME</th> 
+                <br>
+                <th><i class="fa fa-cutlery"></i>DRIVER</th>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <div class="no-pickups">
+              <p>There are no upcoming pickups. Click on the 'Browse Schedules' link at the top to start booking appointments.</p>
+            </div>
+            <div class="show-voter-modal">
+              <span>&times;</span>
+              <div class="show-voter">
+              </div>
+            </div>
+          </div>
+          <div class="js-account-settings">
+            <form>
+              <div class="js-voter-first-name">
+                <h4>First Name</h4>
+                <input type="tel" name="first-name" value="Jane">
+              </div>
+              <div class="js-voter-last-name">
+                <h4>Last Name</h4>
+                <input type="tel" name="last-name" value="Doe">
+              </div>
+              <div class="js-contact">
+                <h4>Contact Number</h4>
+                <input type="tel" name="phone" value="(555)-555-5555">
+              </div>
+              <div class="js-email">
+                <h4>Email Address</h4>
+                <input type="email" name="email" value="janedoe@gmail.com">
+              </div>
+              <div class="js-address">
+                <h4>Address</h4>
+                <input type="text" name="street" value="Full Street Address">
+                <br>
+                <input type="text" name="city" value="City">
+                <br>
+                <input type="text" name="state" value="State">
+                <br>
+                <input type="text" name="zip" value="Zip Code">
+              </div>
+              <div class="js-username">
+                <h4>Username</h4>
+                <input type="tel" name="username" value="janedoe123">
+              </div>
+               <div class="frequency-wrapper">
+                <div class="js-start-date">
+                  <label for="start-date">Please select the day and time you will need a ride:</label>
+                  <br>
+                  <br>
+                  <input type="date" name="start-date" value="">
+                </div>
+                <div class="js-day-of-week">
+                  <label for="day-of-week"></label>
+                  <br>
+                  <input class="no-appearance" type="checkbox" name="monday" value="1"><span>Monday</span>
+                  <input class="no-appearance" type="checkbox" name="tuesday" value="2"><span>Tuesday</span>
+                  <input class="no-appearance" type="checkbox" name="wednesday" value="3"><span>Wednesday</span>
+                  <input class="no-appearance" type="checkbox" name="thursday" value="4"><span>Thursday</span>
+                  <input class="no-appearance" type="checkbox" name="friday" value="5"><span>Friday</span>
+                  <input class="no-appearance" type="checkbox" name="saturday" value="6"><span>Saturday</span>
+                  <input class="no-appearance" type="checkbox" name="sunday" value="0"><span>Sunday</span>
+                </div>
+                 <br>
+                 <br>
+                <div class="js-time">
+                  <label for="pickup-time">Preffered pickup time</label>
+                  <input id="pickup-time" type="time" name="pickup-time" value="">
+                </div>
+              <div class="account-settings-buttons">
+                <button class="cancel-changes" hidden>Cancel</button>
+                <button class="edit-details">Edit Details</button>
+                <button class="save-changes" type="submit">Save Changes</button>
+              </div>
+            </div>
+            </form>
+            <div class="success-modal">
+              <p></p>
+              <button><i class="fa fa-check fa-lg"></i></button>
+            </div>
+          </div>
+          <div class="browse-schedules">
+            <p>Listed below are the driver who are offering rides in your locale today. Click on an entry to view available appointments.</p>
+            <div class="schedules-wrapper"></div>
+          </div>
+          <div class="schedule-info-modal animated">
+            <div class="schedule-info-card">
+              <h4></h4>
+              <p></p>
+              <div class="js-dates-wrapper"></div>
+              <div class="avail-bookings-buttons">
+                <button>Cancel</button>
+              </div>
+            </div>
+          </div>
+          <div class="booking-confirmation">
+            <div class="booking-confirmation-card">
+              <p>Are you sure you want to book this appointment?</p>
+              <div class="booking-confirmation-buttons">
+                <button class="book-yes"><i class="fa fa-check fa-lg"></i></button>
+                <button class="book-no"><i class="fa fa-times fa-lg"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="date-booked">
+            <div class="date-booked-card">
+              <p>It's a date!</p>
+              <button><i class="fa fa-check fa-lg"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="voterdashboard.js"></script>
+  </body>
+</html>

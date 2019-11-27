@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>VOTES on WHEELS</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/af.js">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+  </head>
+  <body>
+    <!--navigation-->
+    <nav class="fixed-nav">
+      <!--div for the logo-->
+      <div class="nav-logo">
+        <a href="#home">VOTES on WHEELS</a>
+      </div>
+      <!--div for the links-->
+      <div class="nav-links">
+        <ul>
+          <li class="demo-link"><a href="#demo"><i class="fa fa-book"></i>DEMO ACCOUNTS</a></li>
+          <li class="register-link"><a href="#register"><i class="fa fa-book"></i>REGISTER</a></li>
+          <li class="login-link"><a href="#login"><i class="fa fa-user"></i>LOG IN</a></li>
+          <li class="howto-link"><a href="#howto"><i class="fa fa-cogs"></i>HOW TO</a></li>
+          <li class="contact-link"><a href="#contact"><i class="fa fa-id-card-o"></i>CONTACT</a></li>
+        </ul>
+      </div>
+
+      <!--hamburger icon-->
+      <div class="sidebar-icon">
+        <a href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+      </div>
+
+      <div class="hamburger-menu animated">
+        <ul>
+          <li><a class="hamburger-close" href="javascript:void(0)">&times; Close</a></li>
+          <li class="demo-link"><a href="#demo"><i class="fa fa-book"></i>DEMO ACCOUNTS</a></li>
+          <li class="register-link"><a href="#register"><i class="fa fa-book"></i>REGISTER</a></li>
+          <li class="login-link"><a href="#login"><i class="fa fa-user"></i>LOG IN</a></li>
+          <li class="howto-link"><a href="#howto"><i class="fa fa-cogs"></i>HOW TO</a></li>
+          <li class="contact-link"><a href="#contact"><i class="fa fa-id-card-o"></i>CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--header with full image-->
+    <header id="home">
+      <div>
+        <h1>Most American citizens have the right to vote.<em>Yet not all of them can.</em></h1>
+        <p><strong>Many individuals cannot get to voting polls due to health, rural locale, and poverty.</strong></p>
+        <p>Help us put an end to these restrictions by volunteering to give someone a ride
+        <br> 
+        to their local polling station and give every American the opportunity to vote.</p>
+        <button class="learn-more-button" type="button">Learn more and start today.</button>
+      </div>
+    </header>
+
+    <main>
+      <!--section for demo accounts-->
+      <div class="demo-types-wrapper animated">
+        <div class="demo-types animated">
+          <span>&times;</span>
+          <h5>Choose an account type</h5>
+          <div class="demo-types-buttons">
+            <button class="driver-demo">Driver</button>
+            <button class="voter-demo">Voter</button>
+          </div>
+        </div>
+      </div>
+      <!--section for login modal-->
+      <section id="login" class="animated">
+        <div class="login-wrapper">
+          <div class="login-close">
+            <button>&times;</button>
+          </div>
+          <div class="login-form">
+            <form>
+              <label>Username</label>
+              <input type="text" name="username" placeholder="Enter Username" required>
+              <label>Password</label>
+              <input type="password" name="password" placeholder="Enter Password" required>
+              <button id="login-form-button">Log In</button>
+            </form>
+          </div>
+          <div class="login-cancel-forgot">
+            <button>Cancel</button>
+            <p>Forgot <a href="#forgot">password</a>?</p>
+          </div>
+        </div>
+        <div class="incorrect-credentials">
+          <div class="incorrect-credentials-card">
+            <p></p>
+            <span><img class="smartphone" src="images/SmartPhone.png" alt="Red and blue smartphone"></span>
+            <button><i class="fa fa-check fa-lg"></i></button>
+          </div>
+          
+          <div class="loading-credentials">
+            <div class="loading-credentials-card">
+            <p class="quotes">“Somewhere inside of all of us is the power to change the world.” - Roald Dahl</p>
+            <p class="quotes">“We do not have government by the majority. We have government by the majority who participate.” - Thomas Jefferson</p>
+            <p class="quotes">“The ballot is stronger than the bullet.” - Abraham Lincoln</p>
+            <p class="quotes">"One of the penalties for refusing to participate in politics is that you end up being governed by your inferiors.” - Plato</p>
+            <p class="quotes">“Someone struggled for your right to vote. Use it.” - Susan B. Anthony</p>
+            <p class="quotes">“The ignorance of one voter in a democracy impairs the security of all.” - John F. Kennedy</p>
+            <span><img class="smartphone" src="images/SmartPhone.png" alt="Red and blue smartphone"></span>
+          </div>
+        </div>
+        </div>
+      </section>
+      <!--section for register modal-->
+      <section id="register" class="animated">
+        <div class="register-wrapper animated">
+          <div class="register-types">
+            <h5>What are you registering as?</h5>
+            <div class="register-types-buttons">
+              <button class="driver-selected">Driver</button>
+              <button class="voter-selected">Voter</button>
+            </div>
+            <button>Cancel</button>
+          </div>
+
+          <div class="driver-register">
+            <h4>Driver Registration Form</h4>
+            <form action="driver/driverdashboard.html" method="get">
+              <label>Driver</label>
+              <div class="fullname-input">
+                <input type="text" name="first-name" placeholder="Enter first name" required>
+                <input type="text" name="last-name" placeholder="Enter last name" required>
+              </div>
+              <label>Contact Number</label>
+              <input type="tel" name="phone" placeholder="Enter phone number" required>
+              <label>Email Address</label>
+              <input type="email" name="email" placeholder="Enter email address" required>
+              <label>Address</label>
+              <div class="fulladdress-input">
+                <input type="text" name="street" placeholder="Street address" required>
+                <input type="text" name="city" placeholder="City" required>
+                <input type="text" name="state" placeholder="State" required>
+                <input type="text" name="zip" placeholder="Zipcode" required size="2">
+              </div>
+              <label>Username</label>
+              <input type="text" name="username" placeholder="Enter preferred username" required>
+              <label>Password</label>
+              <input type="password" name="password" placeholder="Enter preferred password" required>
+              <div class="reg-form-buttons">
+                <button class="cancel">Cancel</button>
+                <button class="sign-up" type="submit" a href="driver/driverdashboard.html">Complete Registration</button>
+              </div>
+            </form>
+            <h5>Already have an account? Sign in <a class="login-link" href="#login">here</a>.</h5>
+          </div>
+
+          <div class="voter-register">
+            <h4>Voter Registration Form</h4>
+            <form action="voter/voterdashboard.html" method="get">
+              <label>Voter Name</label>
+              <label>Person In Charge</label>
+              <div class="fullname-input">
+                <input type="text" name="first-name" placeholder="Enter first name" required>
+                <input type="text" name="last-name" placeholder="Enter last name" required>
+              </div>
+              <label>Contact Number</label>
+              <input type="tel" name="phone" placeholder="Enter phone number" required>
+              <label>Email Address</label>
+              <input type="email" name="email" placeholder="Enter email address" required>
+              <label>Address</label>
+              <div class="fulladdress-input">
+                <input type="text" name="street" placeholder="Street address" required>
+                <input type="text" name="city" placeholder="City" required>
+                <input type="text" name="state" placeholder="State" required>
+                <input type="text" name="zip" placeholder="Zipcode" required>
+              </div>
+              <label>Username</label>
+              <input type="text" name="username" placeholder="Enter preferred username" required>
+              <label>Password</label>
+              <input type="password" name="password" placeholder="Enter preferred password" required>
+              <div class="reg-form-buttons">
+                <button class="cancel">Cancel</button>
+                <button class="sign-up" type="submit" a href="voter/voterdashboard.html">Complete Registration</button>
+              </div>
+            </form>
+            <h5>Already have an account? Sign in <a class="login-link" href="#login">here</a>.</h5>
+          </div>
+        </div>
+      </section>
+      
+      <section id="forgot" class="animated">
+        <div class="forgot-wrapper">
+          <div class="forgot-close">
+            <button>&times;</button>
+          </div>
+          <div class="forgot-form">
+            <form>
+              <label>Username</label>
+              <input type="text" name="username" placeholder="Enter Username" required>
+              <button>Log In</button>
+            </form>
+          </div>
+          <div class="forgot-cancel-forgot">
+            <button>Cancel</button>
+            <p>Forgot <a href="#forgot">password</a>?</p>
+          </div>
+        </div>
+
+        <div class="frequency-wrapper">
+          <div class="frequency-card">
+            
+            <div class="frequency-text">
+              <h4>Please indicate your preferred pickup time.</h4>
+            </div>
+            <div class="js-time">
+              <label for="appt-time">Preffered pickup time</label>
+              <input id="appt-time" type="time" name="appt-time" value="">
+            </div>
+            <div class="add-frequency">
+              <button>Schedule</button>
+            </div>
+          </div>
+        </div>
+        <div class="missing-values">
+          <div class="missing-values-card">
+            <p></p>
+            <button><i class="fa fa-check fa-lg"></i></button>
+          </div>
+        </div>
+        <div class="redirect-message">
+          <div class="redirect-message-card">
+            <p></p>
+            <button><i class="fa fa-smile-o fa-3x"></i></button>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!--section for how to-->
+      <section id="howto">
+        <h2>HOW IT WORKS</h2>
+        <!--for drivers-->
+        <h3><strong>For Drivers</strong></h3>
+        <!--row that holds the text and the thumbnails-->
+        <div class="driver-thumb-row">
+          <!--have 4 thumbnails for instructions-->
+          <div class="thumb-instructions">
+            <h4>REGISTER</h4>
+            <div class="image register"></div>
+            <p>Sign up and create your account with a few easy steps.</p>
+          </div>
+          <div class="thumb-instructions">
+            <h4>SCHEDULE</h4>
+            <div class="image schedule"></div>
+            <p>Set up your preffered time for rides.</p>
+          </div>
+          <div class="thumb-instructions">
+            <h4>WAIT</h4>
+            <div class="image wait"></div>
+            <p>Wait for verified voters to book your available appointments.</p>
+          </div>
+          <div class="thumb-instructions">
+            <h4>CHANGE</h4>
+            <div class="image change"></div>
+            <p>Empower individuals to exercise their constitutional right by driving them to their polling station.</p>
+          </div>
+        </div>        
+        <!--for voter-->
+        <h3><strong>For Voters</strong></h3>
+        <div class="voter-thumb-row">
+          <!--have 4 thumbnails for instructions-->
+          <div class="thumb-instructions">
+            <h4>REGISTER</h4>
+            <div class="image register"></div>
+            <p>Sign up and create your account with a few easy steps.</p>
+          </div>
+          <div class="thumb-instructions">
+            <h4>VIEW</h4>
+            <div class="image view"></div>
+            <p>View the drivers with active schedules in your selected time slot.</p>
+          </div>
+          <div class="thumb-instructions">
+            <h4>BOOK</h4>
+            <div class="image book"></div>
+            <p>Book the time that you prefer from the available times shown.</p>
+          </div>
+          <div class="thumb-instructions">
+            <h4>VOTE</h4>
+            <div class="image vote"></div>
+            <p>Be driven to your polling place and exercise your right to vote!</p>
+          </div>
+        </div>  
+      </section>
+      
+      <!--section for contact us-->
+      <section id="contact">
+        <h2>CONTACT US</h2>
+        <p>Lets get in touch. Send us a message:</p>
+        <!--for our contact info-->
+        <div class="our-info">
+          <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Hartford, CT USA</p>
+          <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (860) 500-2300 </p>
+          <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i><a href="mailto:votesonwheels@gmail.com">Email: votesonwheels@gmail.com</a></p>
+        </div>
+        <!--form for sending message-->
+        <div class="contact-form">
+          <form action="#">
+            <input class="" type="text" placeholder="Name" required name="name">
+            <input class="" type="text" placeholder="Email" required name="email">
+            <input class="" type="text" placeholder="Subject" required name="subject">
+            <input class="" type="text" placeholder="Message" required name="message">
+            <button class="submit" type="submit"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+      <a class="backtop" href="#home"><i class="fa fa-arrow-up"></i> BACK TO TOP</a>
+      <div class="icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p"></i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
+
+      <div class="about-me">
+      <a href="https://github.com/jessmichaud488" target="_blank"><img class="about-icon" src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Github-01-512.png" alt="github icon"></a>
+  
+      <a href="https://www.linkedin.com/in/jm488/" target="_blank"><img class="about-icon" src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Linkin-01-512.png" alt="linkedin icon"></a>
+  
+      <a href="mailto:jessmichaud488@gmail.com"><img class="about-icon" src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Mail-01-512.png" alt="email icon"></a>
+            <p>Created by Jessica Michaud</p>
+      </div>
+    </footer>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,412 @@
+/* media queries*/
+@media only screen and (max-width: 420px){
+	.nav-logo{
+		letter-spacing: 0;
+		padding: 0 1rem;
+	}
+
+	.hamburger-menu{
+		width: 10rem;
+	}
+
+	.sidebar-icon{
+		padding: 0 1.5rem;
+	}
+
+	.profile-card > h3{
+		margin-bottom: 1rem;
+		font-size: 14px;
+	    text-align: center;
+	}
+
+	.profile-nav{
+		height: 1rem;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.profile-nav > a{
+		line-height: normal;
+		font-size: 14px;
+		width: 50%;
+		text-align: center;
+	}
+
+	.profile-card{
+		min-height: 20rem;
+	}
+
+	th,td{
+		padding: 1rem 0;
+		font-size: 14px;
+	}
+
+	th > .fa{
+		display: none;
+	}
+
+	th{
+		font-weight: normal;
+	}
+
+	.js-pickups-list .no-pickups p{
+		margin: 1.5rem auto;
+		font-weight: 14px;
+	}
+
+	.js-account-settings{
+		width: 100%;
+		padding: 0;
+		margin-top: 3rem;
+	}
+
+	.js-account-settings div{
+		margin-bottom: .5rem;
+	}
+
+	.js-account-settings > h3{
+		font-size: 14px;
+	}
+
+	.js-account-settings h4{
+		margin: .5rem 0;
+		font-size: 14px;
+	}
+
+	.js-driver-name p,
+	.js-contact input,
+	.js-email input,
+	.js-username p,
+	.js-password input,
+	input[name=first-name],
+	input[name=street],
+	.js-sched-type select,
+	.js-day-of-week input,
+	.js-time input{
+		margin-left: 0;
+	}
+
+	.js-driver-name p,
+	.js-username p,
+	.js-account-settings input,
+  	.frequency-wrapper label,
+  	.frequency-wrapper input,
+  	.frequency-wrapper select,
+  	.frequency-wrapper span{
+		font-size: 14px;
+	}
+
+  	.js-contact input,
+  	.js-email input,
+  	.js-address input,
+  	.js-password input,
+  	.frequency-wrapper select,
+  	.frequency-wrapper input{
+		padding-left: 0;
+	}
+
+	.js-address input{
+		width: 90%;
+	}
+
+	.js-sched-type select,
+	.js-time input{
+		margin: .5rem 0;
+	}
+
+	.cancel-changes,
+	.edit-details,
+	.save-changes{
+		width: 7rem;
+		padding: .5rem 0;
+		margin: 0 .5rem;
+		font-size: 13px;
+		opacity: 1;
+	}
+
+	.cancel-changes{
+		float: left;
+	}
+
+	.edit-details{
+		float: left;
+	}
+
+	.save-changes{
+		float: right;
+	}
+
+	.account-settings-buttons:before,
+	.account-settings-buttons:after{
+		content: "";
+		clear: both;
+	}
+
+	.js-account-settings .success-modal{
+		width: 15rem;
+		padding: 1.5rem;		
+	}
+
+	.success-modal p{
+		font-size: 14px;
+	}
+
+	.success-modal button{
+		width: 1.5rem;
+		height: 1.5rem;
+		font-size: 10px;
+	}
+}
+
+@media only screen and (min-width:421px) and (max-width: 650px){
+	.nav-logo{
+		letter-spacing: 1;
+		padding: 0 1rem;
+	}
+
+	.hamburger-menu{
+		width: 10rem;
+	}
+
+	.sidebar-icon{
+		padding: 0 1.5rem;
+	}
+
+	.profile-nav{
+		height: 1rem;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.profile-nav > a{
+		line-height: normal;
+		font-size: 14px;
+		width: 50%;
+		text-align: center;
+	}
+
+	.profile-card{
+		min-height: 25rem;
+	}
+
+	.profile-card > h3{
+		margin-bottom: 1rem;
+		font-size: 14px;
+	    text-align: center;
+	}
+
+	th,td{
+		padding: 1rem .5rem;
+		font-size: 14px;
+	}
+
+	th > .fa{
+		display: none;
+	}
+
+	.js-pickups-list .no-pickups p{
+		margin: 1.5rem auto;
+		font-weight: 14px;
+	}
+
+	.js-account-settings{
+		width: 100%;
+		padding: 0 1rem;
+		margin-top: 2rem;
+	}
+
+	.js-account-settings div{
+		margin-bottom: 1rem;
+	}
+
+	.js-account-settings > h3{
+		font-size: 16px;
+	}
+
+	.js-account-settings h4,
+	.frequency-wrapper label{
+		margin: .5rem 0;
+		font-size: 15px;
+	}
+
+	.js-driver-name p,
+	.js-contact input,
+	.js-email input,
+	.js-username p,
+	.js-password input,
+	input[name=first-name],
+	input[name=street],
+	input[name=state],
+	.frequency-wrapper select,
+	.frequency-wrapper input{
+		margin-left: 1rem;
+	}
+
+	.js-driver-name p,
+	.js-username p,
+	.js-account-settings input,
+	.frequency-wrapper select,
+	.frequency-wrapper input{
+		font-size: 15px;
+	}
+
+  	.js-contact input,
+  	.js-email input,
+  	.js-address input,
+  	.js-password input,
+  	.frequency-wrapper select,
+  	.frequency-wrapper input{
+		padding-left: 0;
+	}
+
+	.frequency-wrapper select,
+	.frequency-wrapper input{
+		margin: .5rem 1rem;
+	}
+
+	.js-address input{
+		width: 40%;
+	}
+
+	.cancel-changes,
+	.edit-details,
+	.save-changes{
+		width: 7rem;
+		padding: .5rem 0;
+		margin: 0 .5rem;
+		font-size: 14px;
+		opacity: 1;
+	}
+
+	.cancel-changes,
+	.edit-details,
+	.save-changes{
+		float: none;
+	}
+
+	.account-settings-buttons:before,
+	.account-settings-buttons:after{
+		content: "";
+		clear: both;
+	}
+
+	.js-account-settings .success-modal{
+		width: 15rem;
+		padding: 1.5rem;		
+	}
+
+	.success-modal p{
+		font-size: 14px;
+	}
+
+	.success-modal button{
+		width: 1.5rem;
+		height: 1.5rem;
+		font-size: 10px;
+	}
+}
+
+@media only screen and (min-width: 650px) and (max-width: 950px){
+	.profile-card > h3{
+		font-size: 16px;
+		margin-bottom: 1rem;
+	    text-align: center;
+	}
+
+	.profile-nav{
+		height: 1rem;
+		margin: 0 2rem;
+		width: 90%;
+	}
+
+	.profile-nav > a{
+		line-height: normal;
+		font-size: 16px;
+		width: 50%;
+		text-align: center;
+	}
+
+	.profile-card{
+		max-width: 40rem;
+	}
+
+	.js-address input{
+		width: 40%;
+	}
+
+	input[name=state]{
+		margin-left: 2rem;
+	}
+
+	.cancel-changes,
+	.edit-details,
+	.save-changes{
+		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 950px){
+	.nav-links{
+		display: none;
+	}
+
+	.hamburger-menu{
+		position: absolute;
+		width: 15rem;
+		right: 0;
+		display: none;
+		background-color: #000000;
+		text-align: center;
+		font-weight: lighter;
+		height: 100vh;
+		opacity: .9;
+	}
+
+	.hamburger-menu a{
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+	.hamburger-menu li{
+		list-style-type: none;
+		padding: 1rem 0;
+	}
+
+	.hamburger-menu li:hover{
+		background-color: #9a9999;
+		color: #000000;
+	}
+
+	.hamburger-menu a:hover{
+		color: #000000;
+	}
+
+	.sidebar-icon{
+		display: inline-block;
+		padding: 0 2.5rem;
+		line-height: 3rem;
+	}
+
+	.sidebar-icon a{
+		color: black;
+	}
+
+	.profile-card{
+		width: 90%;
+		padding: 1rem .5rem;
+	}
+
+	.upcoming-pickups{
+		margin-right: 0;
+	}
+
+	.account-settings{
+		margin-left: 0;
+	}
+
+	.js-pickups-list{
+		padding: 1rem 0;
+	}
+
+
+}
