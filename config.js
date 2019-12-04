@@ -6,13 +6,13 @@ exports.PORT = process.env.PORT || 8080;
 
 exports.DATABASE_URL = process.env.DATABASE_URL ||
                        global.DATABASE_URL ||
-                      'mongodb://localhost/VotesonWheels'; //edit for the name of the db
+                      'mongodb+srv://me:Theoandmuffin!1@cluster0-lwkpm.mongodb.net/VotesonWheels?retryWrites=true&w=majority'; //edit for the name of the db
 
 
 exports.JWT_SECRET = 'I love Muffins!'
 
 //for testing
 exports.TEST_DATABASE_URL = process.env.DATABASE_URL ||
-                      'mongodb://localhost/test-VotesonWheels';
+                      'mongodb+srv://me:Theoandmuffin!1@cluster0-lwkpm.mongodb.net/VotesonWheels?retryWrites=true&w=majority';
 
 exports.JWT_EXPIRY = process.env.JWT_EXPIRY || '60d';
