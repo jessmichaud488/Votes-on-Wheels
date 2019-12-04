@@ -2,7 +2,7 @@ var quoteIndex = -1;
 
 
 $(document).ready(function() {
- let API_URL = 'https://secure-brushlands-88020.herokuapp.com/';
+ let API_URL = 'https://votes-on-wheels.herokuapp.com/';
     //LOGIN SECTION
     const loginDbCallMethods = { 
         loginCredentials: {},

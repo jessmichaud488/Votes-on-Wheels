@@ -65,7 +65,7 @@ let server;
 function runServer() {
   return new Promise((resolve, reject) => {
     mongoose.set('debug', true);
-    mongoose.connect(DATABASE_URL, { useNewUrlParser: true }, err => {
+    mongoose.connect(DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true}, err => {
       if (err) {
         return reject(err);
       }
